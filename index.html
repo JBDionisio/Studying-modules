@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <h1>Studying about ESC6 Modules</h1>
+    <p>Write your infos:</p>
+    
+    <input id="name-input" type="text" placeholder="Name">
+    <input id="age-input" type="text" placeholder="Age">
+    <button type="submit" onclick="createUserInJs()">SUBMIT</button>
+
+    <script>
+        function createUserInScreen() {
+            let name = document.querySelector('#name-input').value;
+            let age = document.querySelector('#age-input').value;
+ 
+            const user = new User(name, age);
+            printName(user);
+            printAge(user);
+        }
+    </script>
+</body>
+</html>
